@@ -344,11 +344,7 @@ body{
 #hire_me:hover{
 background-color: transparent;
 }
-#hire_me_span:hover{
-  background: transparent;
-  color: cyan;
-  border: 1px solid hsl(345deg 100% 47%);
-}
+
 /* About section start */
 #about_page{
   min-height: 100vh;
