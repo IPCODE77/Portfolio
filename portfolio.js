@@ -72,32 +72,28 @@ useremail.addEventListener("blur", function () {
 })
 
 
-
-// let input_message = document.getElementById("message");
-// let valid_message = false;
-// input_message.addEventListener("blur", function () {
-//     let regx = /^[A-Za-z0-9]{5,1000}$/;
-//     let namevalue = input_message.value;
-//     console.log(namevalue);
+let input_message = document.getElementById("message");
+let valid_message = false;
+input_message.addEventListener("blur", function () {
     
-//     if (regx.test(namevalue)) {
-//         console.log('true');
-//         valid_message = true;
-//         input_message.style.outline="2px solid  #4d7aff"
+    if(input_message.value.length>=5){
+        valid_message=true;
+        input_message.style.outline="2px solid  #4d7aff"
 
-//     }
-//     else {
-//         console.log('false');
-//         input_message.style.outline="2px solid  red"
-//     }
+    }
+    else{
+        valid_message=false;
+        input_message.style.outline="2px solid  red"
 
-// })
+    }
+})
+
 
 document.querySelector(".mail_thanks2").style.display="none";
 
 let confirm_mail=document.getElementById("confirm_mail");
 confirm_mail.addEventListener("click",function(){
-    if(validusername&&validusermail){
+    if(validusername&&validusermail&&valid_message){
         let from_name=document.getElementById("username").value
         console.log(from_name.value);
         let mail=document.getElementById("mail").value
