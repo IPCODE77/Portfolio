@@ -39,7 +39,7 @@ message.addEventListener("blur",()=>{
 let usernamevalidate = document.getElementById("username");
 let validusername = false;
 username.addEventListener("blur", function () {
-    let regx = /^[a-zA-Z0-9_.]{3,25}$/;
+    let regx = /^[a-zA-Z0-9_.\s]{3,25}$/;
     let namevalue = usernamevalidate.value;
     if (regx.test(namevalue)) {
         console.log('true');
