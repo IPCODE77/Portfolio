@@ -100,7 +100,7 @@ confirm_mail.addEventListener("click",function(){
         console.log(mail);
         let text=document.getElementById("message").value
         console.log(text);
-        emailjs.send("service_60kwm66","template_y7vi5zj",{
+        emailjs.send("service_z810jqf","template_2zvduqh",{
             from_name:document.getElementById("username").value,
             email_id: document.getElementById("mail").value,
             message: document.getElementById("message").value,
